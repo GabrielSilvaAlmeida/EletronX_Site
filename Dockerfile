@@ -2,7 +2,7 @@
 FROM openjdk:17-jdk-slim
 
 
-WORKDIR /app
+WORKDIR /eletronx
 
 
 COPY target/eletronx-0.0.1-SNAPSHOT.jar app.jar
