@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.gif" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/apresentacao.css">
+    <title>EletronX</title>
+</head>
+
+<body>
+    <header th:insert="~{fragments/header :: header}"></header>
+
+
+    <main>
+
+
+        <section>
+           <div class="d-flex justify-content-center">
+    <div class="apresentacao-outdoor pt-5">
+      <img class="img-fluid" src="img/sobre/sobre.jpg" alt="">
+    </div>
+  </div>
+        </section>
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/sobre/tecnico.png"
+                                alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Nossa Equipe </h2>
+                            <p>Composta por Engenheiros e Técnicos capacitados para atuar nos nossos equipamentos. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 ">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/sobre/carrinho.png"
+                                width="300px" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Comercialização de Equipamentos</h2>
+                            <p>Oferecemos aos nossos clientes, contratos de venda, com manutenção em até 24h, incluindo
+                                atendimento preventivo e corretivo de forma personalizada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/sobre/robot.png" width="300px"
+                                alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Eletron Assist</h2>
+                            <p>Não existem mais barreiras entre o on-line e o off-line. O físico e o digital estão
+                                totalmente integrados à vida das pessoas. A Eletron Assist, é a assistência
+                                especializada da EletronX, com o atendimento remoto para a configuração de todo o seu
+                                equipamento e solucionar problemas de forma prática, ágil, eficiente e segura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/sobre/manutencao.png"
+                                width="300px" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Calibração e Manutenção</h2>
+                            <p>Contamos com uma equipe de engenheiros e técnicos, altamente treinados e capacitados em
+                                calibração e manutenção de equipamentos médicos hospitalares, seguindo os protocolos,
+                                normas e especificações de cada fabricante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="video ">
+            <div class="container mt-5">
+                <section class="video">
+                    <div class="container mt-5">
+                        <h1 class="text-center">Vídeo do YouTube</h1>
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/zE7edhh9uDc?si=CJfGFB11Bzu0zpJb"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section> -->
+
+
+    </main>
+    <footer th:insert="~{fragments/footer :: footer}"></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="../js/apresentacao.js"></script>
+</body>
+
+</html>

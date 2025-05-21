@@ -1,0 +1,762 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Estilo inicial para os links do Navbar */
+.nav-link-animate {
+ 
+    font-weight: 500;
+    transition: all 0.3s ease-in-out; /* Animação suave */
+    position: relative; /* Necessário para a animação de borda */
+  }
+  
+  /* Efeito ao passar o mouse */
+  .nav-link-animate:hover {
+    color: #f8f9fa; /* Ajusta o tom do branco */
+
+  }
+  
+  .navbar-dark .dropdown .nav-link {
+
+    transition: color 0.3s ease-in-out; /* Animação suave para alterações */
+  }
+  
+  /* Altera a cor ao passar o mouse */
+  .navbar-dark .dropdown .nav-link:hover {
+ 
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.4); /* Sombra sutil */
+  }
+  
+  /* Altera os itens do dropdown */
+  .navbar-dark .dropdown-menu {
+    background-color: black; /* Fundo preto */
+    border: none; /* Remove borda padrão */
+  }
+  
+  .navbar-dark .dropdown-menu .dropdown-item {
+    color: white; /* Texto branco nos itens do menu */
+    transition: color 0.3s ease-in-out; /* Animação de hover */
+  }
+  
+  .navbar-dark .dropdown-menu .dropdown-item:hover {
+
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente cinza no hover */
+  }
+  
+  /* Linha animada ao passar o mouse */
+  .nav-link-animate::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Posiciona a linha abaixo do texto */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Expande a linha no hover */
+  .nav-link-animate:hover::after {
+    width: 100%;
+  }
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding: 10px 20px;
+    font-size: 1.050rem;
+}
+
+.nav-item.dropdown>.nav-link::after {
+    content: "\f078";
+    font-size: 0.5rem;
+    margin-left: 0.35rem;
+    font-weight: 900;
+    border: none;
+    vertical-align: middle;
+}
+
+.dropdown>.dropdown-menu {
+    background: #ec005e;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #ef3d62;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .dropdown>.dropdown-menu {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: block;
+        transition: all 0.1s ease-out;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        padding: 20px 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .nav-item.dropdown>.nav-link::after {
+        right: 25px;
+        position: absolute;
+    }
+}
+
+.c-item {
+    height: 480px;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+.itens-carousel{
+    button{
+        border-color: #ec005e;
+        background-color: #ec005e;
+    }
+
+    button:hover{
+        border-color: #8f0139;
+        background-color: #8f0139;
+    }
+}
+
+
+.principal-outdoor{
+
+    max-width: 900px;
+
+  img{
+    border-radius: 20px;
+  }
+}
+
+
+.conteiner-apresentacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;   
+}
+
+.maquinas{
+    max-width: 150px;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.link-decorate{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 30px;
+    
+}
+
+.heading-image{
+    background-color: #282936;
+
+}
+
+
+
+
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+   .texto-brilhante {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 
+                 0 0 20px #fff, 
+                 0 0 30px #2d2d2d, 
+                 0 0 40px #2d2d2d, 
+                 0 0 50px #2d2d2d, 
+                 0 0 60px #2d2d2d, 
+                 0 0 70px #2d2d2d;
+    
+  }
+
+ 
+
+ .color-text{
+    color: #282936;
+ }
+
+
+ @media (width <= 1300px) {
+
+
+    .conteiner-apresentacao{
+        grid-template-columns: 1fr 1fr;
+        
+        .sub-outdoor1{
+            padding-top: 5%;
+        }
+        .sub-outdoor2{
+            padding-top: 5%;
+        }
+        .sub-outdoor3{
+            padding-top: 5%;
+        }
+        .sub-outdoor4{
+            padding-top: 5%;
+        }
+    }
+    
+ }
+
+ @media (width <= 600px) {
+
+    .menubar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .conteiner-apresentacao{
+        grid-template-columns: 1fr;
+        
+        .sub-outdoor1{
+            padding-top: 5%;
+        }
+        .sub-outdoor2{
+            padding-top: 5%;
+        }
+        .sub-outdoor3{
+            padding-top: 5%;
+        }
+        .sub-outdoor4{
+            padding-top: 5%;
+        }
+    }
+ }
+
+ .seja-cliente{
+    padding-top: 5%;
+    padding-left: 5%;
+ }
+
+ .conteiner1{
+    height: 1px;
+    background-color: #28293631;
+    margin: 0;
+ }
+
+ .conteiner-login{
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  
+ }
+
+ .entrar{
+    
+    background-color: #636363;
+    padding: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+ }
+
+.entrar:hover{
+    background-color: #ec005e;
+}
+
+.teste1{
+    font-size: 25px;
+
+    padding-left: 5%;
+    text-align: start;
+
+}
+
+.sign-up{
+   margin-left: 20px;
+    background-color: #ec005e;
+    padding: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+.sign-up:hover{
+    background-color:#636363;
+}
+
+.menubar{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.5s;
+
+}
+
+@media (width <= 1300px){
+    .menubar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .conteiner-menu{
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (width <= 501px){
+    .menubar{
+        grid-template-columns: 1fr;
+    }
+}
+
+.conteiner-menu{
+    padding-right: 10px;
+    background-color: #434343;
+    width: 250px;
+    height: 140px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: 0.5s;
+    a{
+        text-decoration: none !important;
+        color: white;
+    }
+    .fusion{
+        transition: 0.5s;
+    }
+}
+.conteiner-menu:hover{
+    background-color: #F2F2F2;
+    color: rgb(0, 0, 0);
+
+    .fusion{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.fusion{
+    padding-left: 10%;
+    color: #ffffff;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    svg{
+        margin-left: 30%;
+    }
+}
+
+.paragrafo-menubar{
+    padding-top: 5%;
+    padding-left: 25px;
+}
+
+
+
+@media (width <= 896px) {
+
+    .itens-carousel{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+
+@media (width <= 432px) {
+
+    .itens-carousel{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+
+.carousel-control-edit{
+    background-color: #282936;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.animated-title {
+    color: black;
+    padding-top: 5%;
+    padding-left: 3%;
+    color:#282936;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: 20px;
+}
+
+@media (width <= 600px) {
+    .button-container{
+        max-width: 200px;
+    }
+}
+
+.only-button{
+
+    padding: 20px;
+    color: black;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+
+
+.sub-image-container {
+    position: relative;
+    max-width: 400px;
+    text-align: start;
+    color: #000;
+    font-weight: bold;
+    p,h3{
+        
+        margin-left: 20px;
+        
+        font-size: 20px;
+    }
+   
+
+}
+
+.sub-image-container img {
+
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    max-height: 400px; /* Altura fixa para manter o mesmo tamanho em todas as imagens */
+/* Corta a imagem para caber na altura e largura especificadas */
+    display: block;
+    border-radius: 30px;
+}
+
+/* Estilo da imagem */
+.image-container img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+.sub-itens{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin: 20px;
+
+}
+
+.container-center{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ajuste conforme necessário */
+}
+
+/* Estilos para o texto e botões sobrepostos */
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #ffffff;
+    max-width: 400px;
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-white, .btn-red {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.btn-red {
+    background-color: #d32f2f;
+    color: #ffffff;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-white, .btn-red {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-white, .btn-red {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+.destaques-container {
+    text-align: center;
+  }
+  
+  .destaques-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .destaque-item {
+    list-style: none;
+    position: relative;
+  }
+  
+  .destaque-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; /* Fonte preta */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .destaque-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    margin: 0 auto;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .destaque-btn:hover::after,
+  .destaque-btn:focus::after {
+    width: 100%;
+  }
+  
+
+.tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  .tab:hover {
+    color: #df0101;
+  }
+  
+  .tab.active {
+    border-bottom-color: #fc0000;
+    font-weight: bold;
+  }
+  
+
+.editor{
+    transition: 0.5s;
+
+}
+.editor:hover{
+    color: white;
+    background-color: #b10000;
+}
+
+
+.boxScreen{
+    transition: 0.5s;
+}
+
+
+.footer h5 {
+    font-weight: bold;
+    color: #d80000; /* Cor semelhante à do Crunchyroll */
+  }
+  
+  .footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ff0037;
+  }
+  
+  .footer .form-select {
+    max-width: 150px;
+  }

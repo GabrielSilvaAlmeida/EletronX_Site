@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EletronX</title>
+</head>
+<body>
+    <header th:fragment="${header}">  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+          <a class="navbar-brand" th:href="@{home}">
+            <img src="img/logo.gif" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link nav-link-animate" th:href="@{home}">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link nav-link-animate" th:href="@{termos}">Termos</a>
+              </li>
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link nav-link-animate dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  contato
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/eletronxhealthcare/">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0">WhatsApp</a></li>
+                </ul>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link nav-link-animate" th:href="@{apresentacao}">Quem Somos</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link nav-link-animate" href="https://eletronxclientes.auvo.com.br/Login#signin">Area do Cliente</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link nav-link-animate" th:href="@{loja}">Loja</a>
+              </li>
+            </ul>
+      
+            <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="pt-2 bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                     viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu me-2" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="login.html">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Configuração</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </ul> -->
+          </div>
+        </div>
+      </nav></header>
+</body>
+</html>

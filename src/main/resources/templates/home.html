@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.gif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <link rel="stylesheet" href="../style/style.css">
+    <title>EletronX</title>
+</head>
+<body>
+
+  <header th:insert="~{fragments/header :: header}">
+</header>
+    
+    <main>
+<section class="first-carousel">
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner itens-carousel">
+          <div class="carousel-item active c-item">
+            <img src="img/monitor-medico.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <img src="img/logoImage.png" width="100px" alt="">
+              <h1 class="texto-brilhante  display-1 fw-bolder text-capitalize pt-4">Compre seu Equipamento de Hemodinâmica com a Qualidade EletronX</h1>
+              <a th:href="@{loja}"><button class="btn btn-primary px-4 py-2 fs-5 mt-5">Veja Mais</button></a>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="img/background-sala-medica.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+            
+              <h1 class="texto-brilhante  display-1 fw-bolder text-capitalize pt-4">Faça a Venda de Seus Equipamentos de Hemodinâmica Conosco</h1>
+              <a th:href="@{apresentacao}"><button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Veja Mais</button></a>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="img/medical.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+
+              <h1 class="texto-brilhante  display-1 fw-bolder text-capitalize pt-4">Entre em contato pelos Nossos Canais de Atendimento</h1>
+              <a href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0"><button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Veja Mais</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon carousel-control-edit " aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon carousel-control-edit" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<div class="text-center">
+  <div class="row pt-5 img-fluid">
+    <div class="col-lg-4">
+    <img class="heading-image bd-placeholder-img rounded-circle" width="140" height="140" src="img/referencia/laboratorio.jpg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+    <h2 class="color-text pt-3">Laboratório</h2>
+    <!-- <p class="color-text">Nosso Laboratório com tecnologia de ponta, e infraestrutura adequada para o tipo de serviço</p> -->
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="heading-image bd-placeholder-img rounded-circle" width="140" height="140" src="img/referencia/frota.jpg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+    <h2 class="color-text pt-3">Nossa Frota</h2>
+    <!-- <p class="color-text">Nosso Laboratório com tecnologia de ponta, e infraestrutura adequada para o tipo de serviço</p> -->
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="heading-image bd-placeholder-img rounded-circle" width="140" height="140" src="img/referencia/estoque.jpg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+    <h2 class="color-text pt-3">Estoque</h2>
+    <!-- <p class="color-text">Estoque com o mais variado tipo de produtos, para resolver seus problemas!</p> -->
+  </div><!-- /.col-lg-4 -->
+</div>
+</div>
+
+<h2 class="animated-title">Descubra Novos Conceitos de Tecnologia</h2>
+
+<section class="outdoor img-fluid">
+  <div class="d-flex justify-content-center">
+    <div class="principal-outdoor pt-5">
+      <a th:href="@{loja}"><img class="img-fluid" src="img/referencia/publicidade_1.jpg" alt=""></a>
+    </div>
+  </div>
+<div class="conteiner-outdoor d-flex justify-content-center">
+  <div class="conteiner-apresentacao pt-5 img-fluid">
+    <div class="sub-outdoor1 img-fluid">
+      <div class="card img-fluid" style="max-width: 18rem; ">
+        <div class=" d-flex justify-content-center" style="max-height: 15rem; max-width: 15rem;">
+          <img src="img/GE3100.png" class="maquinas card-img-top" max alt="...">
+        </div>
+        <div class="card-body text-center">
+          <h5>GE INNOVA 3100</h5>
+          <a th:href="@{loja}">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Saiba Mais</span>
+          </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="sub-outdoor2 img-fluid">
+      <div class="card img-fluid" style="max-width: 18rem; max-height: 18rem;">
+        <div class="d-flex justify-content-center">
+          <img src="img/maquinas/Philips-allura-cv20.png" class="maquinas card-img-top" alt="...">
+        </div>
+        <div class="card-body text-center">
+          <h5>PHILIPS CV20</h5>
+          <a th:href="@{loja}">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Saiba Mais</span>
+            </button>
+            </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="sub-outdoor3 img-fluid">
+      <div class="card img-fluid" style="max-width: 18rem; max-height: 18rem;">
+        <div class="d-flex justify-content-center">
+          <img src="img/maquinas/XPROANGIX3.png" class="maquinas card-img-top" alt="...">
+        </div>
+        <div class="card-body text-center">
+          <h5>ANGIX III</h5>
+          <a th:href="@{loja}">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Saiba Mais</span>
+            </button>
+            </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="sub-outdoor4 img-fluid">
+      <div class="card img-fluid" style="max-width: 18rem;">
+        <div class="d-flex justify-content-center">
+          <img src="img/maquinas/VMICYGNUS.png" class="maquinas card-img-top" alt="...">
+        </div>
+        <div class="card-body text-center">
+          <h5>VMI CYGNUS</h5>
+          <a th:href="@{loja}">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Saiba Mais</span>
+            </button>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+</section>
+
+
+
+<div class="destaques-container pt-5">
+  <h2>Produtos em destaque</h2>
+  <ul class="destaques-list d-flex justify-content-center gap-2 list-unstyled">
+    <li class="destaque-item">
+      <button class="btn destaque-btn" onclick="trocarElementos('img/referencia/cv20.jpg', 'Hemodinâmicas', 'img/referencia/ge3100.jpg', 'img/referencia/vmicygnus.jpg', 'img/referencia/angix3.jpg', 'Tecnologia de Ponta', 'Alta Definição de Imagem', 'Cirúrgia', 'Atenda Seus Pacientes Com Tecnologia EletronX', 'Alta precisão na leitura de Imagens.', 'Faça sua Cirúrgia com Segurança Utilizando nossos Equipamentos')">
+        Hemodinâmica
+      </button>
+    </li>
+    <li class="destaque-item">
+      <button class="btn destaque-btn" onclick="trocarElementos('img/monitor-medico.jpg', 'Monitor de Precisão Médica', 'img/referencia/monitores_diagnostico.png', 'img/referencia/sistema_protecao_parte_inferior.png', 'img/maquinas/Philips-Azurion-Modulo-Touchscreen.webp', 'Imagens Com Alta Definição', 'Protetor parte Inferior', 'Interface Interativa', 'Design moderno, display claro e dados bem visíveis.', 'Os sistemas de proteção da parte inferior do corpo são parte integrante de todos os conceitos de proteção contra radiações', 'Garantimos que sua experiência seja aprimorada e totalmente personalizada.')">
+        Acessórios
+      </button>
+    </li>
+    <li class="destaque-item">
+      <button class="btn destaque-btn" onclick="trocarElementos('img/referencia/auxilio_tec.jpg', 'Nossa Hemodinâmica', 'img/referencia/compra_venda.jpg', 'img/referencia/manutencao.jpg', 'img/referencia/Aluguel_equipamentos.jpg', 'Eficiência no Centro Cirúrgico', 'Precisão Avançada em Procedimentos Médicos', 'Monitoramento e Análise', 'Descubra nossos arcos cirúrgicos de última geração para precisão e segurança em procedimentos.', 'Equipamento moderno para garantir o melhor atendimento médico.', 'Equipamento completo para garantir excelência nos resultados')">
+        Assistência
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="main-container">
+  <div class="image-container">
+    <a href="#"><img id="imagem" src="img/referencia/cv20.jpg" alt="Imagem de fundo"></a>
+    <div class="text-overlay">
+      <h1 id="texto">Hemodinâmicas</h1>
+      <div class="button-group">
+        <a th:href="@{loja}"><button class="editor btn-white img-fluid">Saiba mais</button></a>
+        <a href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0"><button class="editor btn-red img-fluid">Entre em Contato</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-center">
+  <div class="sub-itens row justify-content-center">
+    <div class="sub-image-container col-12 col-md-4 p-2">
+      <a th:href="@{loja}"><img id="subitemimage1" src="img/referencia/ge3100.jpg" alt=""></a>
+      <p id="subitemtitle1">Tecnologia de Ponta</p>
+      <h3 id="h1">Atenda Seus Pacientes Com Tecnologia EletronX</h3>
+    </div>
+    <div class="sub-image-container col-12 col-md-4 p-2">
+      <a th:href="@{loja}"><img id="subitemimage2" src="img/referencia/vmicygnus.jpg" alt=""></a>
+      <p id="subitemtitle2">Monitor de Pressão Arterial</p>
+      <h3 id="h2">Alta precisão na leitura da pressão em tempo real.</h3>
+    </div>
+    <div class="sub-image-container col-12 col-md-4 p-2">
+      <a th:href="@{loja}"><img id="subitemimage3" src="img/referencia/angix3.jpg" alt=""></a>
+      <p id="subitemtitle3">Cirúrgia</p>
+      <h3 id="h3">Faça sua Cirúrgia com Segurança Utilizando nossos Equipamentos</h3>
+    </div>
+  </div>
+</div>
+
+  <div class="seja-cliente-texto">
+    <h2 class="seja-cliente color-text">Seja Nosso Cliente!</h2>
+    <p class="teste1">Aproveite todos os benefícios dos nossos serviços,<br>
+      desde manutenções até compra e venda de equipamentos!</p>
+    <div class="conteiner-login">
+      <a href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0"><div class="sign-up">Entrar em Contato</div></a>
+    </div>
+    <p class="conteiner1"></p>
+  </div>
+
+<div class="menubar">
+  <a class="link-decorate" href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0">
+  <div class="conteiner-menu text-center">
+    <div class="fusion pt-4"><h5>Ajuda</h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+        <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+      </svg>
+  </div>
+  <p class="paragrafo-menubar text-start">Entre em contato com nossa equipe</p>
+</div>
+</a>
+<a class="link-decorate" th:href="@{termos}">
+  <div class="conteiner-menu text-center">
+    <div class="fusion pt-4"><h5>Política</h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+        <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+        <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+      </svg>
+  </div>
+  <p class="paragrafo-menubar text-start">Veja também nossa política de privacidade</p>
+</div>
+</a>
+
+<a class="link-decorate" th:href="@{apresentacao}">
+  <div class="conteiner-menu text-center">
+    <div class="fusion pt-4 "><h5>Empresa</h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+      </svg>
+  </div>
+  <p class="paragrafo-menubar text-start">Descubra mais sobre à EletronX</p>
+</div>
+</a>
+<a class="link-decorate" th:href="@{loja}">
+  <div class="conteiner-menu text-center" th:href="@{apresentacao}">
+    <div class="fusion pt-4"><h5>Máquinas</h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+      </svg>
+  </div>
+  <p class="paragrafo-menubar text-start">Veja nosso estoque de máquinas</p>
+</div>
+</div>
+</a>
+
+    </main>
+
+<footer th:insert="~{fragments/footer :: footer}"></footer>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/preloader.js"></script>
+    <script src="../js/plugins.js"></script>
+</body>
+</html>

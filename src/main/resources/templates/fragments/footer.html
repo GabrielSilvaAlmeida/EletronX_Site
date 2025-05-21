@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EletronX</title>
+</head>
+
+<footer th:fragment="${footer}" class="footer mt-5 pt-5 pb-3 bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <!-- Section: About and Support Links -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Sobre</h5>
+        <ul class="list-unstyled">
+          <li><a th:href="@{apresentacao}" class="text-light">Quem somos</a></li>
+        </ul>
+      </div>
+      
+      <!-- Section: Serviços -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Serviços</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0" class="text-light">Suporte</a></li>
+          <li><a th:href="@{termos}" class="text-light">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <!-- Section: Legal -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Legal</h5>
+        <ul class="list-unstyled">
+          <li><a th:href="@{termos}" class="text-light">Termos de Serviço</a></li>
+        </ul>
+      </div>
+      
+      <!-- Section: Social Media and Language -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Siga-nos</h5>
+        <div class="d-flex gap-2 mb-3">
+          <a href="https://api.whatsapp.com/send/?phone=5521972647698&text&type=phone_number&app_absent=0" class="text-light"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/eletronxhealthcare/" class="text-light"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright and Additional Links -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p class="mb-0">&copy; 2024 EletronX. Todos os direitos reservados.</p>
+        <p><a href="#" class="text-light">Termos de Uso</a> | <a href="#" class="text-light">Política de Privacidade</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+</body>
+</html>
