@@ -152,6 +152,8 @@ body{
 }
 
 
+
+
 .conteiner-apresentacao{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -295,6 +297,7 @@ button {
  .color-text{
     color: #282936;
  }
+
 
 
  @media (width <= 1300px) {
